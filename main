@@ -12,9 +12,23 @@ echo -e "-----------------------------------\n"
 
 }
 
+
+function operatingsystemInfo() {
+echo -e "------------------------------\n"
+echo -e "------------------------------\n"
+
+printf "Operating System Info:{$NC}\n";
+sudo neofetch
+echo -e "------------------------------\n"
+echo -e "------------------------------\n"
+
+}
+
+
 echo "Report of Hardware & operating system details...!"
 {
 hardware_operating
+operatingsystemInfo
 } 
 
 
