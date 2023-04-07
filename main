@@ -17,18 +17,33 @@ function operatingsystemInfo() {
 echo -e "------------------------------\n"
 echo -e "------------------------------\n"
 
-printf "Operating System Info:{$NC}\n";
+printf "Operating System Info in graphical way:\n";
 sudo neofetch
 echo -e "------------------------------\n"
 echo -e "------------------------------\n"
 
 }
 
+function sensorsInfo() {
+echo -e "------------------------------\n"
+echo -e "------------------------------\n"
+
+printf "Temperature and current usage of Hardware systems:\n";
+sudo sensors-detect;
+sudo sensors;
+
+echo -e "------------------------------\n"
+echo -e "------------------------------\n"
+
+}
+
+
 
 echo "Report of Hardware & operating system details...!"
 {
 hardware_operating
 operatingsystemInfo
+sensorsInfo
 } 
 
 
