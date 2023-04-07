@@ -37,13 +37,27 @@ echo -e "------------------------------\n"
 
 }
 
+function cpuusageInfo() {
+echo -e "-----------------------------\n"
+echo -e "-----------------------------\n"
+
+printf "Monitoring of CPU Usage:\n"
+sudo htop
+
+echo -e "-----------------------------\n"
+echo -e "-----------------------------\n"
+
+}
+ 
 
 
-echo "Report of Hardware & operating system details...!"
+
+echo "Report of all Hardware & operating system details, sensors(temparature), cpu usage...!"
 {
 hardware_operating
 operatingsystemInfo
 sensorsInfo
+cpuusageInfo
 } 
 
 
