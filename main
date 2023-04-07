@@ -1,0 +1,27 @@
+#!/bin/bash
+
+function hardware_operating() {
+echo -e "-----------------------------------\n"
+echo -e "-----------------------------------\n"
+
+printf "Hardware & Operating info:\n";
+sudo lshw;
+
+echo -e "-----------------------------------\n"
+echo -e "-----------------------------------\n"
+
+}
+
+echo "Report of Hardware & operating system details...!"
+{
+hardware_operating
+} 
+
+
+
+
+
+
+
+
+
